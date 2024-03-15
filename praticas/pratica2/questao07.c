@@ -17,10 +17,10 @@ int main() {
   printf("\x1b[34m-------------------------------------\n");
   printf("      C O N T R A   C H E Q U E      \n");
   printf("-------------------------------------\x1b[0m\n");
-  printf("\x1b[32mSalario bruto.....: R$ %8.2f\x1b[0m\n", salario_bruto);
-  printf("\x1b[31mImposto de renda..: R$ %8.2f\x1b[0m\n", valor_ir);
-  printf("\x1b[31mImposto INSS......: R$ %8.2f\x1b[0m\n", valor_inss);
-  printf("\x1b[32mSalario liquido...: R$ %8.2f\x1b[0m\n", salario_liquido);
+  printf("Salario bruto.....: \x1b[32mR$ %8.2f\x1b[0m\n", salario_bruto);
+  printf("Imposto de renda..: \x1b[31mR$ %8.2f\x1b[0m\n", valor_ir);
+  printf("Imposto INSS......: \x1b[31mR$ %8.2f\x1b[0m\n", valor_inss);
+  printf("Salario liquido...: \x1b[32mR$ %8.2f\x1b[0m\n", salario_liquido);
   
   return 0;
 }
