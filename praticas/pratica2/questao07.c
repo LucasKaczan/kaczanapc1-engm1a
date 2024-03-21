@@ -4,23 +4,23 @@ Faça um programa em C que leia o valor da hora de trabalho e o total de horas t
 #include <stdio.h>
 
 int main() {
-  float valor_hora_trabalho = 150.00;
-  float total_horas_trabalhadas = 100;
-  float salario_bruto = valor_hora_trabalho * total_horas_trabalhadas;
+  float salario_bruto = 0.0;
+  printf("Insira o seu salario bruto: ");
+  int deu_certo = scanf("%f", &salario_bruto);
 
-  const float IR = 0.25f;
-  const float INSS = 0.11f;
+  const float IR = 0.25f; 
+  const float INSS = 0.11f; 
   float valor_ir = salario_bruto * IR;
   float valor_inss = salario_bruto * INSS;
   float salario_liquido = salario_bruto - (valor_ir + valor_inss);
 
-  printf("\x1b[34m-------------------------------------\n");
-  printf("      C O N T R A   C H E Q U E      \n");
-  printf("-------------------------------------\x1b[0m\n");
+  printf("\x1b[34m-------------------------------\n");
+  printf("   C O N T R A   C H E Q U E   \n");
+  printf("-------------------------------\x1b[0m\n");
   printf("Salario bruto.....: \x1b[32mR$ %8.2f\x1b[0m\n", salario_bruto);
   printf("Imposto de renda..: \x1b[31mR$ %8.2f\x1b[0m\n", valor_ir);
   printf("Imposto INSS......: \x1b[31mR$ %8.2f\x1b[0m\n", valor_inss);
   printf("Salario liquido...: \x1b[32mR$ %8.2f\x1b[0m\n", salario_liquido);
-  
+
   return 0;
 }
