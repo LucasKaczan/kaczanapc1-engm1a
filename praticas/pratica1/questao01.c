@@ -10,7 +10,7 @@ int main() {
   printf("Entre com a nota2: ");
   deu_certo = scanf("%f", &A2);
 
-  float media = 0.4*A1 + 0.6*A2;
+  double media = 0.4*A1 + 0.6*A2;
 
   printf("A média final é %.1f\n", media);
 

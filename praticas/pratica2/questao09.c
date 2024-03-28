@@ -6,7 +6,7 @@
 int main() {
   int numero;
   printf("Digite um número inteiro: ");
-  scanf("%d", &numero);
+  scanf("%i", &numero);
   printf("O caractere correspondente na tabela ASCII é: %c\n", numero);
   
   return 0;
