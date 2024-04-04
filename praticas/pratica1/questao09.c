@@ -18,8 +18,7 @@ int main() {
   deu_certo = scanf("%i", &dias);
   
   total = anos * 365 + meses * 30 + dias;
-  segundos_totais = total * 24 * 60 * 60;
   
-  printf("Você viveu um total de %i segundos\n", segundos_totais);
+  printf("Você viveu um total de %i dias\n", total);
   return 0;
 }

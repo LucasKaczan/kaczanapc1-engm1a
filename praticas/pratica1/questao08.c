@@ -1,4 +1,4 @@
-1239/*
+/*
 Faça um programa em C que converta um tempo expresso em segundos para um valor em horas, minutos e segundos (ex.: 1000 segundos corresponde a 0 horas 16 minutos e 40 segundos).
 */
 
@@ -12,7 +12,7 @@ int main() {
   int resto = 0;
 
   printf("Entre com os segundos: ");
-  scanf("%i", &tempo);
+  int deu_certo = scanf("%i", &tempo);
 
   horas = tempo / 3600;
   resto = tempo % 3600;
