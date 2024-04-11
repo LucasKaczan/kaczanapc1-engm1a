@@ -21,6 +21,10 @@ int main() {
 
   printf("Entre com o terceiro ângulo: ");
   deu_certo = scanf("%i", &angulo3);
+  
+if (angulo1 + angulo2 + angulo3 != 180) {
+  printf("Isso não é um triângulo nem fudendo\n");
+   } else {
 
 if (angulo1 == 90|| angulo2 == 90|| angulo3 == 90)
   printf("É um triângulo retângulo\n");
@@ -30,6 +34,8 @@ if (angulo1 > 90|| angulo2 > 90|| angulo3 > 90)
 
 if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90)
   printf("É um triângulo acutângulo\n");
+  }
+
 
   return 0;
 }

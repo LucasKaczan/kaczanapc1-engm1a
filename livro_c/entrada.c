@@ -2,22 +2,22 @@
 int main() {
 int dia, idade, estudante, casal;
 printf("Informe o dia da semana (1:Domingo, 2:Segunda, ... 7:Sábado): ");
-scanf("%i", &dia);
+int deu_certo = scanf("%i", &dia);
 if (dia == 2) {
 printf("paga meia");
 } else {
 printf("Informe a idade: ");
-scanf("%i", &idade);
+deu_certo = scanf("%i", &idade);
 if (idade <= 12 || idade >= 65) {
 printf("paga meia");
 } else {
 printf("É estudante? (1:Sim ou 2:Não): ");
-scanf("%i", &estudante);
+deu_certo = scanf("%i", &estudante);
 if (estudante == 1) {
 printf("paga meia");
 } else {
 printf("É casal? (1:Sim ou 2:Não): ");
-scanf("%i", &casal);
+deu_certo = scanf("%i", &casal);
 if (dia == 4 && casal == 1) {
 printf("Paga meia\n");
 } else {
