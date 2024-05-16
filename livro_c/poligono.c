@@ -19,12 +19,12 @@ int main() {
   printf("Quantos lados tem o polígono?: ");
   int deu_certo = scanf("%i", &lados);
 
-  if (lados > 5) {
-    printf("Menos, por favor.\n");
-  } else {
-  printf("Qual a medida do lado?: ");
-  deu_certo = scanf("%f", &medida);
-
+  if (lados > 5 || lados < 3)
+    printf("Entre 3 e 5 lados, ajuda pô\n");
+  else {
+    printf("Qual a medida do lado?: ");
+    deu_certo = scanf("%f", &medida);
+  }
   if (lados == 3) {
     area = (medida * medida) * sqrt(3) / 4;
     printf("É um triângulo com área de %f\n", area);
@@ -36,7 +36,6 @@ int main() {
   if (lados == 5) {
     area = (5 * medida * medida) / (4 * tan(M_PI / 5));
     printf("É um pentágono com área de %f\n", area);
-  }
   }
   return 0;
 }

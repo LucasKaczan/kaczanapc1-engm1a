@@ -14,7 +14,7 @@ printf("paga meia");
 printf("É estudante? (1:Sim ou 2:Não): ");
 deu_certo = scanf("%i", &estudante);
 if (estudante == 1) {
-printf("paga meia");
+printf("Paga meia\n");
 } else {
 printf("É casal? (1:Sim ou 2:Não): ");
 deu_certo = scanf("%i", &casal);
